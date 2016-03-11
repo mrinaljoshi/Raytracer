@@ -41,11 +41,13 @@ typedef Flt Vec[3];	    /* Vector in 3-space (nx, ny, nz)		*/
 typedef Vec Point;	    /* Point in 3-space (x, y, z)		*/
 typedef Vec Color;	    /* Float rep. of a color (r, g, b) where	*/
 			    /*   0.0 <= r,g,b <= 1.0.			*/
-
+typedef Flt arr[9];
 
     /* Definition of the root of the scene description */
 
+
 typedef struct SceneIO {
+	//struct sortT *sort;
     struct CameraIO *camera;  /* Perspective camera		      */
     struct LightIO *lights;   /* Head of the linked list of lights    */
     struct ObjIO *objects;    /* Head of the linked list of objects   */
